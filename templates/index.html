@@ -6,6 +6,14 @@
 </head>
 <body>
   <h1>Students</h1>
+  <h2>Class skill averages</h2>
+  <ul>
+    <li>Programming: {{ skill_averages.programming }}</li>
+    <li>Data / stats: {{ skill_averages.data_stats }}</li>
+    <li>Frontend design: {{ skill_averages.frontend_design }}</li>
+    <li>Business pitch: {{ skill_averages.business_pitch }}</li>
+  </ul>
+  <h2>Names</h2>
   <ul>
     {% for name in names %}
       <li>{{ name }}</li>
